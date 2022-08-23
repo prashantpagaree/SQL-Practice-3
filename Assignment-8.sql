@@ -17,6 +17,7 @@ select * from  A left join  B on A.ID=B.ID;
 select * from  A right join  B on A.ID=B.ID;
 select * from  A full outer join  B on A.ID=B.ID;
 
+--Import Projects.csv and Workers.csv into database
 select* from Projects;
 select * from worker;
 
