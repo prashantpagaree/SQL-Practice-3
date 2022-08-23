@@ -1,4 +1,10 @@
 USE ASSIGN7;
+
+
+--import Cutomers.csv into database
+select * from Customers
+
+--create table venue
 create table venue(
 VenueID int,
 VenueName varchar(3),
@@ -9,9 +15,10 @@ Insert into venue values(1,'AB',2),(2,'BC',3),(3,'CD',1),(4,'DE',3),(5,'EF',4),
 --Write a query to categorise the ratings into buckets and then output the
 --count of venues into each bucket
 --Buckets for Ratings are as follows:
---1-2 – Good
---3-4 – Average
---5 – Worst
+--1-2 â€“ Good
+--3-4 â€“ Average
+--5 â€“ Worst
+
 select   case 
 	     when Rating >=1 and Rating <=2 then 'Good'
 	     when Rating >=3 and Rating <=4 then 'Average'
@@ -40,7 +47,7 @@ select   case
 --you can think of.
 
 --5a. Sort the table by placing the records of Countries Canada &
---Mexico at the top and then sort rest of the records by Customer’ name
+--Mexico at the top and then sort rest of the records by Customerâ€™ name
 
 select * from Customers
 order by case 
