@@ -1,5 +1,7 @@
 CREATE DATABASE ASSIGN7;
 USE ASSIGN7;
+
+--import students.csv into database
 SELECT * FROM STUDENTS;
 
 --1a. Students who passed SQL or Excel but failed Python
